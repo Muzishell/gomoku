@@ -2,14 +2,23 @@
   "name": "gomoku",
   "version": "0.1.0",
   "description": "Epitech AI Project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git@git.rizzen.eu:Rizzen/gomoku.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "serve-favicon": "^2.3.2",
+    "socket.io-client": "^1.7.1",
+    "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "performance-now": "^0.2.0"
+  }
 }

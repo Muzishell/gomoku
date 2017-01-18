@@ -1,0 +1,57 @@
+body {
+  background-image: url("../images/bambou_zen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#chatlog li {
+  padding 5px 10px;
+}
+
+#chatlog li:nth-child(odd) {
+  background: #eee;
+}
+
+#board {
+  border-style: groove; 
+  margin: 5%;
+  position: absolute;
+  left 50%;
+}
+
+#chatbox {
+  position: absolute;
+  top: 9.5%;
+  right: 8%;
+  width: 40%;
+  max-width: 40%;
+}
+
+#chatlog {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-style: groove;
+  overflow: auto;
+  height: 500px;
+}
+
+form {
+  background: #000;
+  padding: 3px;
+  position: relative;
+  bottom: 0;
+}
+
+form input {
+  border: 0;
+  padding: 13px;
+  width: 90%;
+  margin-right: 0.8%;
+}
+
+form button {
+  width: 9%;
+  border: none;
+  position: relative;
+}

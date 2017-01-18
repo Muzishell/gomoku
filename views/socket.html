@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+  </head>
+  <body>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var sock = io();
+    sock.on('connected', function (data) {
+      document.write('<p>You\'re the user #' + data.user + '</p>' );
+      document.write('<p>In the room #' + data.room + '</p>');
+    });
+    sock.on('starting', function () {
+      document.write('<p>Room is full, Game is about to begin...</p>');
+      sock.emit('test', {test: 'test'});
+    });
+sock.on('disconnected', function(data){
+  document.write('<p>Player ' + data.name + ' has left. Reason: ' + data.reason + '</p>');
+});
+  </script>
+</html>

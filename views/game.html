@@ -1,0 +1,25 @@
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <script type="text/javascript" src="/js/wgo.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.green-amber.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <title>Gadgeto Go</title>
+  </head>
+  <body>
+    <div id="board"></div>
+    <div id="chatbox">
+      <ul id="chatlog" class="mdl-list"></ul>
+      <form id="chatinput" action="">
+        <input id="message" autocomplete="off"/><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Send Message</button>
+      </form>
+    </div>
+    <script type="text/javascript">var socket = io()</script>
+    <script type="text/javascript" src="/js/connections.js"></script>
+    <script type="text/javascript" src="/js/board.js"></script>
+  </body>
+</html>
